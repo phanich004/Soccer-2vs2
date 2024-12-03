@@ -1,4 +1,4 @@
-# Soccer Agents with A2C Implementation
+# Soccer Agents with PPO Implementation
 
 This repository contains reinforcement learning agents trained for a Unity ML-Agents soccer simulation using the Advantage Actor-Critic (A2C) algorithm. The provided Unity environment, `SoccerTwos.app`, simulates a 2v2 soccer scenario.
 
