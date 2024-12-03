@@ -16,18 +16,17 @@ ML-Agents is an open-source plugin for creating intelligent agents in Unity game
 
 ### Steps
 
-1. **Clone the repository:**
-
-    ```sh
-    git clone https://github.com/Unity-Technologies/ml-agents
-    cd ml-agents
-    ```
-
-2. **Create and activate a new conda environment:**
+1. **Create and activate a new conda environment:**
 
     ```sh
     conda create --name rl python=3.10.12
     conda activate rl
+    ```
+2. **Clone the repository:**
+
+    ```sh
+    git clone https://github.com/Unity-Technologies/ml-agents
+    cd ml-agents
     ```
 
 3. **Install the ML-Agents package:**
@@ -40,6 +39,9 @@ ML-Agents is an open-source plugin for creating intelligent agents in Unity game
    ```sh
     mlagents-learn --help
     ```
+5. **Download the environment**
+   For Windows, download the environment from SoccerTwos/SoccerTwos/SoccerTwos.exe
+   
    
 
 
@@ -54,7 +56,6 @@ This repository contains reinforcement learning agents trained for a Unity ML-Ag
 Install requirements.txt
 Install the given SoccerTwos excetuable.
 
-git clone https://github.com/Unity-Technologies/ml-agents.git
 
 Create a file named training-envs-executables in the ml-agents file and place the SoccerTwos excetuable in it.
 
