@@ -39,8 +39,8 @@ ML-Agents is an open-source plugin for creating intelligent agents in Unity game
    ```sh
     mlagents-learn --help
     ```
-5. **Download the environment**
-   For Windows, download the environment from SoccerTwos/SoccerTwos/SoccerTwos.exe
+5. **Download the environment**<br>
+   For Windows: [Download SoccerTwos.exe](https://github.com/phanich004/Soccer-2vs2/blob/main/SoccerTwos/SoccerTwos/SoccerTwos.exe)
    
    
 
