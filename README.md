@@ -18,8 +18,7 @@ Create a file named training-envs-executables in the ml-agents file and place th
 
 ### Clone the Repository
 
-git https://github.com/phanich004/Soccer-2vs2.git
-cd soccer-agents
+git clone https://github.com/phanich004/Soccer-2vs2.git
 
 run python 1striker.py to run the python files
 
