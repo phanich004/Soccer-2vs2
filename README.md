@@ -5,7 +5,7 @@
 
 ## Overview
 
-ML-Agents is an open-source plugin for creating intelligent agents in Unity games and simulations using reinforcement learning, imitation learning, neuroevolution, or other machine learning methods through a simple-to-use Python API.
+ML-Agents is an open-source plugin for creating intelligent agents in Unity games and stimulations using reinforcement learning, imitation learning, neuroevolution, or other machine learning methods through a simple-to-use Python API.
 
 ## Installation
 
@@ -43,7 +43,7 @@ ML-Agents is an open-source plugin for creating intelligent agents in Unity game
    
 
 
-This repository contains reinforcement learning agents trained for a Unity ML-Agents soccer simulation using the Proximal Policy Optimization algorithm. The provided Unity environment, `SoccerTwos.app`, simulates a 2v2 soccer scenario.
+This repository contains reinforcement learning agents trained for a Unity ML-Agents soccer stimulation using the Proximal Policy Optimization algorithm. The provided Unity environment, `SoccerTwos.app`, stimulates a 2v2 soccer scenario.
 
 ## Files Overview
 - **1striker.py**: Trains a single striker agent.
