@@ -63,8 +63,6 @@ class A2CAgent:
         rewards = torch.FloatTensor(np.array(self.rewards)).to(self.device)
         values = torch.FloatTensor(np.array(self.values)).to(self.device)
         log_probs = torch.FloatTensor(np.array(self.log_probs)).to(self.device)
-
-        # Calculate returns and advantages
         returns = torch.zeros_like(rewards)
         advantages = torch.zeros_like(rewards)
         R = 0
@@ -72,30 +70,21 @@ class A2CAgent:
             R = rewards[t] + self.gamma * R
             returns[t] = R
             advantages[t] = R - values[t]
-
-        # Get current predictions
         action_probs, current_values = self.network(states)
         dist = torch.distributions.Categorical(action_probs)
         entropy = dist.entropy().mean()
-
-        # Calculate losses
         policy_loss = -(log_probs * advantages).mean()
         value_loss = F.mse_loss(current_values.squeeze(), returns)
         total_loss = policy_loss + self.value_coef * value_loss - self.entropy_coef * entropy
-
-        # Update network
         self.optimizer.zero_grad()
         total_loss.backward()
         torch.nn.utils.clip_grad_norm_(self.network.parameters(), 0.5)
         self.optimizer.step()
-
-        # Clear memory
         self.states.clear()
         self.actions.clear()
         self.rewards.clear()
         self.values.clear()
         self.log_probs.clear()
-
         return total_loss.item()
 
 
