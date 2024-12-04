@@ -41,6 +41,7 @@ ML-Agents is an open-source plugin for creating intelligent agents in Unity game
     ```
 5. **Download the environment**<br>
    For Windows: [Download SoccerTwos.exe](https://github.com/phanich004/Soccer-2vs2/blob/main/SoccerTwos/SoccerTwos/SoccerTwos.exe)
+
    
    
 
@@ -65,4 +66,9 @@ Create a file named training-envs-executables in the ml-agents file and place th
 git clone https://github.com/phanich004/Soccer-2vs2.git
 
 run python 1striker.py to run the python files
+
+## HuggingFace models in Action
+<img width="1728" alt="Screenshot 2024-12-04 at 1 41 09 AM" src="https://github.com/user-attachments/assets/6e12df91-d44a-4556-a0d2-18e869538d4c">
+To view the agents play, follow this [link](https://huggingface.co/spaces/unity/ML-Agents-SoccerTwos) and select our trained agents by the name Phani0404, you can find two teams trained with POCA and PPO algorithms.
+
 
