@@ -49,10 +49,9 @@ ML-Agents is an open-source plugin for creating intelligent agents in Unity game
 This repository contains reinforcement learning agents trained for a Unity ML-Agents soccer stimulation using the Proximal Policy Optimization algorithm. The provided Unity environment, `SoccerTwos.app`, stimulates a 2v2 soccer scenario.
 
 ## Files Overview
-- **1striker.py**: Trains a single striker agent.
 - **2v2_stationary.py**: Trains a 2v2 soccer game with stationary opponents.
 - **2v2_random.py**: Trains a 2v2 soccer game with randomly moving opponents.
-
+- **2vs2_train_onestriker.py**: Trains a 2v2 soccer game where only agent learn to strike the goal.
 ## Setup and Requirements
 Install requirements.txt
 Install the given SoccerTwos excetuable.
@@ -65,10 +64,10 @@ Create a file named training-envs-executables in the ml-agents file and place th
 
 git clone https://github.com/phanich004/Soccer-2vs2.git
 
-run python 1striker.py to run the python files
+run python 2v2_stationary.py to run the python files
 
 ## HuggingFace models in Action
 <img width="1728" alt="Screenshot 2024-12-04 at 1 41 09 AM" src="https://github.com/user-attachments/assets/6e12df91-d44a-4556-a0d2-18e869538d4c">
-To view the agents play, follow this [link](https://huggingface.co/spaces/unity/ML-Agents-SoccerTwos) and select our trained agents by the name Phani0404, you can find two teams trained with POCA and PPO algorithms.
+To view the agents play, visit https://huggingface.co/spaces/unity/ML-Agents-SoccerTwos and select our trained agents by the name Phani0404, you can find two teams trained with POCA and PPO algorithms.
 
 
